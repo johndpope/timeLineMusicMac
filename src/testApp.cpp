@@ -35,7 +35,7 @@ void testApp::update(){
 		midiEvents.updatePlayPosition();
     }
     
-    triggerMovingFactor = triggerMovingFactor + 0.02;
+    triggerMovingFactor = triggerMovingFactor + 0.012;
     if (triggerMovingFactor>1) triggerMovingFactor = 0;
     
     frameView = ofToString(ofGetFrameRate());
@@ -95,6 +95,10 @@ void testApp::triggerLineDraw(){
         
         for (int i=0; i<noteBlock.size(); i++) {
             noteBlock[i].contact(triggerPosOnLine);
+            if (noteBlock[i].contactBlock) {
+                cout << "Pitch : " << noteBlock.at(i).midiPitch << endl;
+            }
+
         }
         
         ofPushStyle();
