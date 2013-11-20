@@ -26,6 +26,16 @@
 using namespace std;
 using namespace MIDIConstants;
 
+struct MidiNoteRandomDraw {
+    int pitch;
+    int velocity;
+    int duration;
+    float xPos;
+    float yPos;
+    int rotationZ;
+};
+
+
 class testApp : public ofBaseApp{
 
 	public:
@@ -59,7 +69,6 @@ class testApp : public ofBaseApp{
 
 	int screenWidth, screenHeight;
     
-    
     // ---- GUI
     ofxPanel gui;
     bool bGuiHide;
@@ -76,6 +85,11 @@ class testApp : public ofBaseApp{
     ofParameter<bool> AllSceneOnOff;
     ofParameter<bool> numberOnOff;
     ofParameter<float> inputVolume;
+    
+    
+    // MIDI Note new Drawing
+    vector<MidiNoteRandomDraw> midiNoteRandomDraw;
+    void randomMidiDrawing();
     
 };
 

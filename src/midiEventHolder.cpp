@@ -147,11 +147,11 @@ void midiEventHolder::drawFile(){
 		
 	}	
 	
-	ofDrawBitmapString(ofToString(timeOffsetForScreen, 1), 20,20);
-	
-	ofDrawBitmapString(timeString, 20, 60);
-		
-	ofDrawBitmapString(matchString, 20, ofGetHeight() - 20);
+//	ofDrawBitmapString(ofToString(timeOffsetForScreen, 1), 20,20);
+//	
+//	ofDrawBitmapString(timeString, 20, 60);
+//		
+//	ofDrawBitmapString(matchString, 20, ofGetHeight() - 20);
 	
 }
 

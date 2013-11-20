@@ -2,6 +2,12 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
+    
+	ofSetFrameRate(60);
+    ofBackground(255);
+    
+    midiNoteRandomDraw.clear();
+    
 	midiFileName = "../../../data/entertainer.mid";
 	int retVal = cannamMainFunction();
 	
@@ -11,7 +17,6 @@ void testApp::setup(){
 	screenHeight = ofGetHeight();
 	midiEvents.screenWidth = &screenWidth;
 	midiEvents.screenHeight = &screenHeight;
-	ofSetFrameRate(60);
     
     gui.setup(parameters);
     gui.setPosition(10, 10);
@@ -35,9 +40,55 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw(){
     
-	midiEvents.drawFile();
+//	midiEvents.drawFile();
     
-    ofDrawBitmapString( ofToString( midiEvents.tickLocation/480 ), 100, 100);
+    randomMidiDrawing();
+}
+
+
+
+void testApp::randomMidiDrawing(){
+    
+    ofPushMatrix();
+    ofPushStyle();
+    
+    ofSetColor( ofColor::fromHsb(0, 0, 0, 255) );
+//    ofDrawBitmapString( ofToString( midiEvents.tickLocation/480 ), 100, 100);
+    
+    for (int i=0; i<midiNoteRandomDraw.size(); i++) {
+        float x = midiNoteRandomDraw[i].xPos;
+        float y = midiNoteRandomDraw[i].yPos;
+        float width = midiNoteRandomDraw[i].duration * 0.3;
+        float height = midiNoteRandomDraw[i].velocity;
+        height = ofMap( height, 0, 127, 0, 5 );
+        float rotationZ = midiNoteRandomDraw[i].rotationZ;
+        
+        if (rotationZ==0) {
+            if (x>ofGetWidth()/2) {
+                width = -width;
+            }
+            ofBeginShape();
+            ofVertex( x, y );
+            ofVertex( x+width, y );
+            ofVertex( x+width, y+height );
+            ofVertex( x, y+height );
+            ofEndShape();
+        } else {
+            if (y>ofGetHeight()/2) {
+                width = -width;
+            }
+            ofBeginShape();
+            ofVertex( x, y );
+            ofVertex( x+height, y );
+            ofVertex( x+height, y+width );
+            ofVertex( x, y+width );
+            ofEndShape();
+        }
+        
+    }
+    
+    ofPopStyle();
+    ofPopMatrix();
     
 }
 
@@ -308,6 +359,16 @@ int testApp::cannamMainFunction(){
                     v.push_back(j->getDuration());
                     midiEvents.recordedNoteOnMatrix.push_back(v);
                     midiEvents.recordedEventTimes.push_back(midiEvents.getEventTimeMillis(t));
+                    
+                    MidiNoteRandomDraw midiNoteRandomDraw_e;
+                    midiNoteRandomDraw_e.pitch = j->getPitch();
+                    midiNoteRandomDraw_e.velocity = j->getVelocity();
+                    midiNoteRandomDraw_e.duration = j->getDuration();
+                    midiNoteRandomDraw_e.xPos = ofRandom( 100, ofGetWidth()-100 );
+                    midiNoteRandomDraw_e.yPos = ofRandom( 50, ofGetHeight()-50 );
+                    midiNoteRandomDraw_e.rotationZ = round(ofRandom( 1 ));
+                    midiNoteRandomDraw.push_back(midiNoteRandomDraw_e);
+                    
                     break;
                     
                 case MIDI_POLY_AFTERTOUCH:
