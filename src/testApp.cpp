@@ -4,7 +4,7 @@
 void testApp::setup(){
     
 	ofSetFrameRate(60);
-    ofBackground(255);
+    ofBackground(120);
     
     midiNoteRandomDraw.clear();
     
@@ -22,10 +22,10 @@ void testApp::setup(){
     gui.setPosition(10, 10);
     gui.loadFromFile("settings.xml");
     gui.add(frameView.setup("fr", ""));
-    gui.add(audioBar.setup("", ""));
-    gui.add(midiBar.setup("", ""));
-    gui.add(theSongName.setup("", ""));
+    gui.add(bMidiNoteDraw.set("bMidiNoteDraw", false));
     gui.minimizeAll();
+    
+    triggerMovingFactor = 0;
     
 }
 
@@ -35,61 +35,76 @@ void testApp::update(){
 		midiEvents.updatePlayPosition();
     }
     
+    triggerMovingFactor = triggerMovingFactor + 0.02;
+    if (triggerMovingFactor>1) triggerMovingFactor = 0;
+    
+    frameView = ofToString(ofGetFrameRate());
 }
 
 //--------------------------------------------------------------
 void testApp::draw(){
+
+    gui.draw();
     
-//	midiEvents.drawFile();
+    if (bMidiNoteDraw) {
+        midiEvents.drawFile();
+    }
     
-    randomMidiDrawing();
+    drawPreviewLine();
+    triggerLineDraw();
+    
+    for (int i=0; i<noteBlock.size(); i++) {
+        noteBlock[i].drawing();
+    }
+}
+
+
+void testApp::randomMidiInput(int _p, int _v, int _d){
+    
+    NoteBlock noteBlock_e;
+    noteBlock_e.noteInput(_p, _v, _d);
+    noteBlock.push_back(noteBlock_e);
+    
 }
 
 
 
-void testApp::randomMidiDrawing(){
-    
+void testApp::drawPreviewLine(){
+
     ofPushMatrix();
     ofPushStyle();
+    ofSetColor( ofColor::fromHsb(0, 255, 255, 150) );
+    ofSetLineWidth(3);
     
-    ofSetColor( ofColor::fromHsb(0, 0, 0, 255) );
-//    ofDrawBitmapString( ofToString( midiEvents.tickLocation/480 ), 100, 100);
+    ofLine( mousePressedPos, mouseReleassedPos );
     
-    for (int i=0; i<midiNoteRandomDraw.size(); i++) {
-        float x = midiNoteRandomDraw[i].xPos;
-        float y = midiNoteRandomDraw[i].yPos;
-        float width = midiNoteRandomDraw[i].duration * 0.3;
-        float height = midiNoteRandomDraw[i].velocity;
-        height = ofMap( height, 0, 127, 0, 5 );
-        float rotationZ = midiNoteRandomDraw[i].rotationZ;
+    ofPopStyle();
+    ofPopMatrix();
+}
+
+
+void testApp::triggerLineDraw(){
+    ofPushMatrix();
+    ofPushStyle();
+    ofSetColor( ofColor::fromHsb(0, 255, 255, 150) );
+    ofSetLineWidth(3);
+    for (int i=0; i<triggerLine.size(); i++) {
+        ofLine( triggerLine[i].start, triggerLine[i].stop );
         
-        if (rotationZ==0) {
-            if (x>ofGetWidth()/2) {
-                width = -width;
-            }
-            ofBeginShape();
-            ofVertex( x, y );
-            ofVertex( x+width, y );
-            ofVertex( x+width, y+height );
-            ofVertex( x, y+height );
-            ofEndShape();
-        } else {
-            if (y>ofGetHeight()/2) {
-                width = -width;
-            }
-            ofBeginShape();
-            ofVertex( x, y );
-            ofVertex( x+height, y );
-            ofVertex( x+height, y+width );
-            ofVertex( x, y+width );
-            ofEndShape();
+        triggerPosOnLine = ( triggerLine[i].stop - triggerLine[i].start ) * triggerMovingFactor + triggerLine[i].start;
+        
+        for (int i=0; i<noteBlock.size(); i++) {
+            noteBlock[i].contact(triggerPosOnLine);
         }
         
+        ofPushStyle();
+        ofEllipse( triggerPosOnLine.x, triggerPosOnLine.y, 10, 10 );
+        
+        ofPopStyle();
     }
     
     ofPopStyle();
     ofPopMatrix();
-    
 }
 
 //--------------------------------------------------------------
@@ -154,17 +169,26 @@ void testApp::mouseMoved(int x, int y ){
 
 //--------------------------------------------------------------
 void testApp::mouseDragged(int x, int y, int button){
-    
+    mouseReleassedPos.x = x;
+    mouseReleassedPos.y = y;
 }
 
 //--------------------------------------------------------------
 void testApp::mousePressed(int x, int y, int button){
-    
+    mouseReleassedPos.x = x;
+    mouseReleassedPos.y = y;
+    mousePressedPos.x = x;
+    mousePressedPos.y = y;
 }
 
 //--------------------------------------------------------------
 void testApp::mouseReleased(int x, int y, int button){
-    
+    TriggerLine triggerLine_e;
+    triggerLine_e.start.x = mousePressedPos.x;
+    triggerLine_e.start.y = mousePressedPos.y;
+    triggerLine_e.stop.x = mouseReleassedPos.x;
+    triggerLine_e.stop.y = mouseReleassedPos.y;
+    triggerLine.push_back(triggerLine_e);
 }
 
 //--------------------------------------------------------------
@@ -360,14 +384,7 @@ int testApp::cannamMainFunction(){
                     midiEvents.recordedNoteOnMatrix.push_back(v);
                     midiEvents.recordedEventTimes.push_back(midiEvents.getEventTimeMillis(t));
                     
-                    MidiNoteRandomDraw midiNoteRandomDraw_e;
-                    midiNoteRandomDraw_e.pitch = j->getPitch();
-                    midiNoteRandomDraw_e.velocity = j->getVelocity();
-                    midiNoteRandomDraw_e.duration = j->getDuration();
-                    midiNoteRandomDraw_e.xPos = ofRandom( 100, ofGetWidth()-100 );
-                    midiNoteRandomDraw_e.yPos = ofRandom( 50, ofGetHeight()-50 );
-                    midiNoteRandomDraw_e.rotationZ = round(ofRandom( 1 ));
-                    midiNoteRandomDraw.push_back(midiNoteRandomDraw_e);
+                    randomMidiInput( j->getPitch(), j->getVelocity(), j->getDuration() );
                     
                     break;
                     
@@ -430,19 +447,10 @@ int testApp::cannamMainFunction(){
                     << (int)j->getMessageType() << " message length " <<
                     j->getMetaMessage().length() << endl;
                     break;
-                    
-                    
             }
-            
-            
         }
-        
-        
     }
     
 	//}
-	
-	
-	
-    
 }//end cannam midi main
+

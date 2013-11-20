@@ -20,6 +20,8 @@
 
 #include "ofxGui.h"
 
+#include "NoteBlock.h"
+
 //#include "ofxOsc.h"
 //#define PORT 12121
 
@@ -30,11 +32,22 @@ struct MidiNoteRandomDraw {
     int pitch;
     int velocity;
     int duration;
-    float xPos;
-    float yPos;
+    float onPosX;
+    float onPosY;
+    float offPosX;
+    float offPosY;
     int rotationZ;
+    void contactCheck(){
+        
+    }
 };
 
+
+struct TriggerLine {
+    ofVec2f start;
+    ofVec2f stop;
+    
+};
 
 class testApp : public ofBaseApp{
 
@@ -75,21 +88,29 @@ class testApp : public ofBaseApp{
     ofParameterGroup parameters;
     ofXml settings;
     ofxLabel frameView;
-    ofxLabel theSongName;
-    ofxLabel audioBar;
-    ofxLabel midiBar;
-    ofParameter<int> sceneChange;
-    ofParameter<float> bgImageBright_G;
-    ofParameter<float> speedSmoothVolume;
-    ofParameter<bool> bDrawPointCloud;
-    ofParameter<bool> AllSceneOnOff;
-    ofParameter<bool> numberOnOff;
-    ofParameter<float> inputVolume;
+    ofParameter<bool> bMidiNoteDraw;
     
+    
+    // NoteBlock
+    vector<NoteBlock> noteBlock;
     
     // MIDI Note new Drawing
     vector<MidiNoteRandomDraw> midiNoteRandomDraw;
     void randomMidiDrawing();
+    void randomMidiInput(int _p, int _v, int _d);
+    
+    // Trigger Line
+    vector<TriggerLine> triggerLine;
+    ofVec2f mouseReleassedPos;
+    ofVec2f mousePressedPos;
+    void drawPreviewLine();
+    void triggerLineDraw();
+    
+    
+    // Trigger Point;
+    float triggerMovingFactor;
+    ofVec2f triggerPosOnLine;
+    bool triggerHoverX, triggerHoverY;
     
 };
 
