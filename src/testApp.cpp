@@ -6,8 +6,6 @@ void testApp::setup(){
 	ofSetFrameRate(60);
     ofBackground(120);
     
-    midiNoteRandomDraw.clear();
-    
 	midiFileName = "../../../data/entertainer.mid";
 	int retVal = cannamMainFunction();
 	
@@ -27,6 +25,20 @@ void testApp::setup(){
     
     triggerMovingFactor = 0;
     
+    
+    // Tonic
+    ofSoundStreamSetup(2, 0, this, 44100, 256, 4);
+
+    ControlGenerator midiNote = synth.addParameter("midiNumber");
+    ControlGenerator noteFreq =  ControlMidiToFreq().input(midiNote);
+    Generator tone = RectWave().freq( noteFreq );
+    tone = LPF12().input(tone).Q(10).cutoff((noteFreq * 2) + SineWave().freq(10) * 0.5 * noteFreq);
+
+    ControlGenerator envelopeTrigger = synth.addParameter("trigger");
+    Generator toneWithEnvelope = tone * ADSR().attack(0).decay(1.5).sustain(0).release(0).trigger(envelopeTrigger).legato(true);
+    Generator toneWithDelay = StereoDelay(0.5, 0.75).input(toneWithEnvelope).wetLevel(0.1).feedback(0.2);
+
+    synth.setOutputGen( toneWithEnvelope );
 }
 
 //--------------------------------------------------------------
@@ -84,6 +96,7 @@ void testApp::drawPreviewLine(){
 
 
 void testApp::triggerLineDraw(){
+
     ofPushMatrix();
     ofPushStyle();
     ofSetColor( ofColor::fromHsb(0, 255, 255, 150) );
@@ -96,9 +109,8 @@ void testApp::triggerLineDraw(){
         for (int i=0; i<noteBlock.size(); i++) {
             noteBlock[i].contact(triggerPosOnLine);
             if (noteBlock[i].contactBlock) {
-                cout << "Pitch : " << noteBlock.at(i).midiPitch << endl;
+                trigger( noteBlock.at(i).midiPitch );
             }
-
         }
         
         ofPushStyle();
@@ -110,6 +122,24 @@ void testApp::triggerLineDraw(){
     ofPopStyle();
     ofPopMatrix();
 }
+
+
+void testApp::trigger(int _pitch){
+    synth.setParameter("midiNumber", _pitch);
+    synth.setParameter("trigger", 1);
+}
+
+//--------------------------------------------------------------
+void testApp::setScaleDegreeBasedOnMouseX(){
+//    int newScaleDegree = ofGetMouseX() * NUMBER_OF_KEYS / ofGetWindowWidth();
+//    if(ofGetMousePressed() && ( newScaleDegree != scaleDegree )){
+//        scaleDegree = newScaleDegree;
+//        trigger();
+//    }else{
+//        scaleDegree = newScaleDegree;
+//    }
+}
+
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
@@ -159,10 +189,22 @@ void testApp::keyPressed(int key){
 		}
         
 	}
+    
+    
+    if (key=='x') {
+        triggerLine.clear();
+    }
+    
 }
 
 //--------------------------------------------------------------
 void testApp::keyReleased(int key){
+
+    if (key=='r') {
+        reload = true;
+        noteBlock.clear();
+        int retVal = cannamMainFunction();
+    }
     
 }
 
@@ -193,6 +235,10 @@ void testApp::mouseReleased(int x, int y, int button){
     triggerLine_e.stop.x = mouseReleassedPos.x;
     triggerLine_e.stop.y = mouseReleassedPos.y;
     triggerLine.push_back(triggerLine_e);
+    
+    if (triggerLine.size()>9) {
+        triggerLine.erase(triggerLine.begin());
+    }
 }
 
 //--------------------------------------------------------------
@@ -458,3 +504,7 @@ int testApp::cannamMainFunction(){
 	//}
 }//end cannam midi main
 
+
+void testApp::audioRequested (float * output, int bufferSize, int nChannels){
+    synth.fillBufferOfFloats(output, bufferSize, nChannels);
+}

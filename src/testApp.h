@@ -16,11 +16,13 @@
 
 #include <iostream>
 #include "midiEventHolder.h"
-#include "ofxFft.h"
 
 #include "ofxGui.h"
 
 #include "NoteBlock.h"
+
+#include "ofxTonic.h"
+using namespace Tonic;
 
 //#include "ofxOsc.h"
 //#define PORT 12121
@@ -37,9 +39,6 @@ struct MidiNoteRandomDraw {
     float offPosX;
     float offPosY;
     int rotationZ;
-    void contactCheck(){
-        
-    }
 };
 
 
@@ -50,6 +49,11 @@ struct TriggerLine {
 };
 
 class testApp : public ofBaseApp{
+
+    ofxTonicSynth synth;
+    int scaleDegree;
+    void trigger(int _pitch);
+    void setScaleDegreeBasedOnMouseX();
 
 	public:
 		void setup();
@@ -64,6 +68,9 @@ class testApp : public ofBaseApp{
 		void mouseReleased(int x, int y, int button);
 		void windowResized(int w, int h);
 
+    void audioRequested (float * output, int bufferSize, int nChannels);
+
+    
 	void startPlaying();
 	void stopPlaying();
 	bool getFilenameFromDialogBox(string* fileNameToSave);
@@ -95,7 +102,7 @@ class testApp : public ofBaseApp{
     vector<NoteBlock> noteBlock;
     
     // MIDI Note new Drawing
-    vector<MidiNoteRandomDraw> midiNoteRandomDraw;
+    MidiNoteRandomDraw midiNoteRandomDraw;
     void randomMidiDrawing();
     void randomMidiInput(int _p, int _v, int _d);
     
@@ -111,6 +118,8 @@ class testApp : public ofBaseApp{
     float triggerMovingFactor;
     ofVec2f triggerPosOnLine;
     bool triggerHoverX, triggerHoverY;
+    
+    bool reload;
     
 };
 

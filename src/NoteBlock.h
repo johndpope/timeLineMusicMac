@@ -15,6 +15,7 @@ class NoteBlock{
     
 public:
     NoteBlock();
+    ~NoteBlock();
     
     void update();
     void noteInput(int pitch, int velocity, int duration);
