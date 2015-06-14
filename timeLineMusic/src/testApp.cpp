@@ -3,10 +3,12 @@
 //--------------------------------------------------------------
 void testApp::setup(){
     
-	ofSetFrameRate(60);
-    ofBackground(120);
+    ofSetDataPathRoot("../Resources/data/");
     
-	midiFileName = "../../../data/entertainer.mid";
+	ofSetFrameRate(60);
+    ofBackground(255);
+    
+	midiFileName = "data/entertainer.mid";
 	int retVal = cannamMainFunction();
 	
 	playing = false;
@@ -39,6 +41,8 @@ void testApp::setup(){
     Generator toneWithDelay = StereoDelay(0.5, 0.75).input(toneWithEnvelope).wetLevel(0.1).feedback(0.2);
 
     synth.setOutputGen( toneWithEnvelope );
+    
+    fullscreen = false;
 }
 
 //--------------------------------------------------------------
@@ -101,6 +105,7 @@ void testApp::triggerLineDraw(){
     ofPushStyle();
     ofSetColor( ofColor::fromHsb(0, 255, 255, 150) );
     ofSetLineWidth(3);
+
     for (int i=0; i<triggerLine.size(); i++) {
         ofLine( triggerLine[i].start, triggerLine[i].stop );
         
@@ -205,6 +210,12 @@ void testApp::keyReleased(int key){
         noteBlock.clear();
         int retVal = cannamMainFunction();
     }
+    
+    if (key=='f') {
+        fullscreen = !fullscreen;
+        ofSetFullscreen(fullscreen);
+    }
+    
     
 }
 

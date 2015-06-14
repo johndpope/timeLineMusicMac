@@ -1,0 +1,1076 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01FC8D05CA501B53F6C1782F /* StereoDelay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 329ABE2CA184EB7F4BE05BC0 /* StereoDelay.cpp */; };
+		02993C5300B0DCEB21D021D3 /* ControlGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 823F2C4242638E7BE92BBACA /* ControlGenerator.cpp */; };
+		0761DF42C2303FEA321C3DE2 /* DelayUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5E18B2913B75515D6F9DBE61 /* DelayUtils.cpp */; };
+		085A705A4414D892703717B4 /* ControlSnapToScale.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00A81D17FED4744CCD000880 /* ControlSnapToScale.cpp */; };
+		0C70741DF4F4B50E5EBC2E53 /* ADSR.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84ADCC668F6E3032F6E9191F /* ADSR.cpp */; };
+		11787BD2DD882AD95813D42F /* ControlStepper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F34A0CB5DB5A77FE49871C7 /* ControlStepper.cpp */; };
+		1365066CDAD2DEC11CE17B18 /* ControlChangeNotifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6823CA1F07B4778C50F5F19B /* ControlChangeNotifier.cpp */; };
+		170610A19FA9B6623AB8557B /* ControlConditioner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BC45E4DACE76F94FF0D0519 /* ControlConditioner.cpp */; };
+		1D630D2FD3E2F527A7747C00 /* ofxToggle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 021E44C1F2F225C5628E57F3 /* ofxToggle.cpp */; };
+		1D7ACFC1637CBC2A81A9E3B8 /* ControlRandom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 743CD8E85804FDECD8A2E0F4 /* ControlRandom.cpp */; };
+		1FDBD3C0F5E03277FA7042BA /* ControlMetroDivider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 16C708A9E381F8A50B5CF25C /* ControlMetroDivider.cpp */; };
+		1FDC53FADD2599323CD4684E /* SampleTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 948EB7C98862E98454694505 /* SampleTable.cpp */; };
+		23D85D81C332EFF42246C299 /* BLEPOscillator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B19AA147EBEA2F99CC77584F /* BLEPOscillator.cpp */; };
+		258DE4FE0E17A691B1ECAB06 /* ofxBaseGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC80D589B227489C925F6EB4 /* ofxBaseGui.cpp */; };
+		29D734F0DDECC8C5978185D7 /* testApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00A1BFCBB38848AD0E0C8539 /* testApp.cpp */; };
+		2D8F5CB5A40DE25EC97DA970 /* AudioFileUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 59238CD43F966833890F8A79 /* AudioFileUtils.cpp */; };
+		366B29CE7CFA7080360ED957 /* SineWave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50797F0C38242BE035B99721 /* SineWave.cpp */; };
+		3731C442E85A5725A3DBC1CE /* NoteBlock.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DC9812335144769961D9581E /* NoteBlock.cpp */; };
+		37C2D7A22A8313F6F724303F /* TonicFrames.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A9266575F19FA22B98255D76 /* TonicFrames.cpp */; };
+		3D5B05390E4B441DBA465D48 /* ofxSlider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 512F85418609E67CFED65748 /* ofxSlider.cpp */; };
+		40792E663FB078329774F91E /* ControlSwitcher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A05396602DEE517F5F486976 /* ControlSwitcher.cpp */; };
+		41ED751C68B9D28329E8AB9E /* ControlCallback.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDEBC794060A9DFB8970E434 /* ControlCallback.cpp */; };
+		465012EBD4EAB5B8095E9C57 /* Arithmetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A364F5B42FEC3BB001D7E19A /* Arithmetic.cpp */; };
+		47394C682F897B265693B298 /* ofxSliderGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F689F55F2F059DD1E8C3BE6B /* ofxSliderGroup.cpp */; };
+		47AEC45AC231F7ADC5C99A47 /* ControlFloor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3D5839C8A3DE6C4E7F1246E4 /* ControlFloor.cpp */; };
+		5418F65F8DEF4BD7078A3A2B /* ControlDbToLinear.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 283E2BECA8DD1F0C61545757 /* ControlDbToLinear.cpp */; };
+		57CDD11BFAE9CBF942BB8A3D /* MonoToStereoPanner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B9CF3DFB95BBB9FF13FA3D5A /* MonoToStereoPanner.cpp */; };
+		72FDD8BE8A9D8494665054F3 /* ControlValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3BADEA53D3F47E7A8CD7C5DC /* ControlValue.cpp */; };
+		73F3BA51ECF2A460B1CACD94 /* RectWave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB3907758A1052B00AA0546B /* RectWave.cpp */; };
+		74CCB88913E790BBAD3A27BE /* RingBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4CFBB97845DFBE66322DB60 /* RingBuffer.cpp */; };
+		75D73A593FB626A062B493E2 /* ControlPrinter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C1A41966919556124B46FCD4 /* ControlPrinter.cpp */; };
+		76DB20A2A574D39A5B9423D9 /* ControlArithmetic.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 593B43EA58B55DEF8DA94C8F /* ControlArithmetic.cpp */; };
+		77F2ED14C3D2CE9F41A2D6D1 /* drawMidiNotes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26B24989CEFA066C732EF343 /* drawMidiNotes.cpp */; };
+		7D38DC8021C7B4DAF7A69C2D /* ofxButton.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFF3F06FBE6B0D7CEDDE8FE5 /* ofxButton.cpp */; };
+		7D4CA57CEB408030D55DE5F0 /* Filters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5BBB5C24A70F956CCF9AE36C /* Filters.cpp */; };
+		8AF2EEC4DF2BAC3C35A8A239 /* CompressorLimiter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 050D17EC6C6CAC8BBB3ADF7E /* CompressorLimiter.cpp */; };
+		8B6F32C9D700B7E3F6EBFC83 /* BasicDelay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 872F64CD74DB8A5B76B62051 /* BasicDelay.cpp */; };
+		8FF4D046A6861730E2B0C98C /* ControlTriggerFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AFDF9A3C85B997051192D321 /* ControlTriggerFilter.cpp */; };
+		908EE70F3FD8EBAEC4E4C987 /* BufferPlayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CC84AEDEE8FCDAABA63F1595 /* BufferPlayer.cpp */; };
+		92341401421A0B920082DDBD /* ofxGuiGroup.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CF0C9CB00961FB5339CA25E1 /* ofxGuiGroup.cpp */; };
+		95CD42950BE62C162A7A815A /* LFNoise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D5D9C6DBF0397FA5FBAF325D /* LFNoise.cpp */; };
+		9A492B5A584706B9FB956B10 /* Noise.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D29D8268D3BD790F0736FCB /* Noise.cpp */; };
+		9B8BD79C44E24679A499D4D0 /* ControlTrigger.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10CCAA6FD3A686A594B2E44B /* ControlTrigger.cpp */; };
+		9D0882A0D434DBC3DDECD811 /* ControlDelay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 51FC300B6E32950BDBE85BB4 /* ControlDelay.cpp */; };
+		9F6D5A9E40F4E921B926177A /* Generator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 288FFD5BDDB56163EB49345F /* Generator.cpp */; };
+		9FFF143C973D03F537173D44 /* ControlMidiToFreq.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EBBABB9C6B5CCDB698F9F2AF /* ControlMidiToFreq.cpp */; };
+		A488DFFA45219390CAEC1E20 /* BufferFiller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 957960D39663DBCCDC2AE56A /* BufferFiller.cpp */; };
+		A65CBD20178985071B9E1974 /* Mixer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1CDB0542603B7CAB7F6CE9A3 /* Mixer.cpp */; };
+		A8332085CE6828F777F75D66 /* ControlMetro.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F3EC557ABDE4F95198FA0EAA /* ControlMetro.cpp */; };
+		A88572331AE6726A003B8953 /* MIDIFileReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A88572311AE6726A003B8953 /* MIDIFileReader.cpp */; };
+		B175CFE7B2152CD478E1D6D6 /* ofxTonicSynth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07B7D4C70C40787848BAEA07 /* ofxTonicSynth.cpp */; };
+		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		BEC7F7D830F6BBDB814CD97B /* CombFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3455698B6D6F036A8292229C /* CombFilter.cpp */; };
+		CC0106CAF2A507EF63728E06 /* SawtoothWave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AB3B761981D1662E9E4CA533 /* SawtoothWave.cpp */; };
+		CE9496881F832FFB1A850AC7 /* FilterUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 741F26B77A060521D14348E6 /* FilterUtils.cpp */; };
+		D41B21C1AB6D1BBB8EF5A522 /* ofxPanel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0F8138DA6AF657A161D95584 /* ofxPanel.cpp */; };
+		D8EA7BF307006FF96D75F81B /* ControlXYSpeed.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 277F047DEFBA6FBF45DA308C /* ControlXYSpeed.cpp */; };
+		D970D3ECD900F846776BC85B /* Reverb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1C8557EE82BB2574595A7084 /* Reverb.cpp */; };
+		DB07BB971086C304CA1AA148 /* ControlRecorder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 411057523B298EFBCFDC6C7B /* ControlRecorder.cpp */; };
+		DF276444C8B415B79AAAEF84 /* DynamicVector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 23231D5B9BFA976EC334F601 /* DynamicVector.cpp */; };
+		E0991CBE1EC91B9322AC8366 /* midiEventHolder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B6B1881C95C600C095C833A8 /* midiEventHolder.cpp */; };
+		E3D2A3536C837423F8C4733A /* ControlParameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = AD66E4251579557432468B41 /* ControlParameter.cpp */; };
+		E3D8B660B37129AEAAC603B6 /* Effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4B6FD2B61505CA0AB0B739F0 /* Effect.cpp */; };
+		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
+		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
+		E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */; };
+		E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9730E8CC7DD009D7055 /* AudioToolbox.framework */; };
+		E45BE97F0E8CC7DD009D7055 /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9750E8CC7DD009D7055 /* CoreAudio.framework */; };
+		E45BE9800E8CC7DD009D7055 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9760E8CC7DD009D7055 /* CoreFoundation.framework */; };
+		E45BE9810E8CC7DD009D7055 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9770E8CC7DD009D7055 /* CoreServices.framework */; };
+		E45BE9830E8CC7DD009D7055 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9790E8CC7DD009D7055 /* OpenGL.framework */; };
+		E45BE9840E8CC7DD009D7055 /* QuickTime.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */; };
+		E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4B69E1D0A3A1BDC003C02F2 /* main.cpp */; };
+		E4C2424710CC5A17004149E2 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424410CC5A17004149E2 /* AppKit.framework */; };
+		E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424510CC5A17004149E2 /* Cocoa.framework */; };
+		E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E4C2424610CC5A17004149E2 /* IOKit.framework */; };
+		E4EB6799138ADC1D00A09F29 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
+		E63F4667B2E69C390DE5594D /* Synth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 17C00C6A75897510EB84F223 /* Synth.cpp */; };
+		E7AC2657E8C96AAAEE1D9B19 /* ofxLabel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A2275C1E76C24434AB3838BC /* ofxLabel.cpp */; };
+		E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */; };
+		E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7E077E715D3B6510020DFD4 /* QTKit.framework */; };
+		E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7F985F515E0DE99003869B5 /* Accelerate.framework */; };
+		E9A96F8C29B30CDF9264C109 /* RampedValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBEBEDDA3B38A98A02FC08 /* RampedValue.cpp */; };
+		E9FC1A5BEF16D79A7AA93907 /* TableLookupOsc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5140860DB99F5D47F18C916F /* TableLookupOsc.cpp */; };
+		ED4A67A1165011C77DDBDC01 /* DSPUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ECC458AF867A5CF7FBA1BABA /* DSPUtils.cpp */; };
+		F042C3F088716C7EB2339A0F /* ControlPulse.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CDEFB71B9A25906CBE7118B3 /* ControlPulse.cpp */; };
+		F13781413CB2102335822C77 /* PolySynth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DEEF3C6072BDDDB6F70CCD1 /* PolySynth.cpp */; };
+		F70D1F854825282D021CAF40 /* ControlCounter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A1BCD560ACEEF93E696CBF99 /* ControlCounter.cpp */; };
+		FA98C9EE09410CEC8005AA08 /* FixedValue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9F6717C2C9E58F9F16E9CE24 /* FixedValue.cpp */; };
+		FDF535249079D4B50BB9F146 /* ControlComparison.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1B859341A22FB17B4EDAD0C2 /* ControlComparison.cpp */; };
+		FF3E5FACBDEEE9CB993033CF /* BitCrusher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5F8F4B12D3849CCEF94E1688 /* BitCrusher.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4328147138ABC890047C5CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4B27C1510CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+		E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E4B27C1410CBEB8E00536013;
+			remoteInfo = openFrameworks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4C2427710CC5ABF004149E2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00A1BFCBB38848AD0E0C8539 /* testApp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = testApp.cpp; path = src/testApp.cpp; sourceTree = SOURCE_ROOT; };
+		00A81D17FED4744CCD000880 /* ControlSnapToScale.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlSnapToScale.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlSnapToScale.cpp; sourceTree = SOURCE_ROOT; };
+		021E44C1F2F225C5628E57F3 /* ofxToggle.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxToggle.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxGui/src/ofxToggle.cpp; sourceTree = SOURCE_ROOT; };
+		04CF94E33D81597127BD84F4 /* AudioFileUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = AudioFileUtils.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/AudioFileUtils.h; sourceTree = SOURCE_ROOT; };
+		050D17EC6C6CAC8BBB3ADF7E /* CompressorLimiter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = CompressorLimiter.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/CompressorLimiter.cpp; sourceTree = SOURCE_ROOT; };
+		05694B93650DE1C481478EFA /* ControlXYSpeed.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlXYSpeed.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlXYSpeed.h; sourceTree = SOURCE_ROOT; };
+		0585675D5DDDA99187B2B4E4 /* PolySynth.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = PolySynth.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/PolySynth.h; sourceTree = SOURCE_ROOT; };
+		07B7D4C70C40787848BAEA07 /* ofxTonicSynth.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxTonicSynth.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/ofxTonicSynth.cpp; sourceTree = SOURCE_ROOT; };
+		0939F2BE63A39C87789FACF5 /* ofxGuiGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxGuiGroup.h; path = ../../../of_v0.8.4_osx_release/addons/ofxGui/src/ofxGuiGroup.h; sourceTree = SOURCE_ROOT; };
+		0A6F7E27321C6B29B0058CB4 /* ControlArithmetic.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlArithmetic.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlArithmetic.h; sourceTree = SOURCE_ROOT; };
+		0C09313AD58E6B27381B9951 /* ofxBaseGui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxBaseGui.h; path = ../../../of_v0.8.4_osx_release/addons/ofxGui/src/ofxBaseGui.h; sourceTree = SOURCE_ROOT; };
+		0CBBEBEDDA3B38A98A02FC08 /* RampedValue.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = RampedValue.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/RampedValue.cpp; sourceTree = SOURCE_ROOT; };
+		0F8138DA6AF657A161D95584 /* ofxPanel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxPanel.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxGui/src/ofxPanel.cpp; sourceTree = SOURCE_ROOT; };
+		10CCAA6FD3A686A594B2E44B /* ControlTrigger.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlTrigger.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlTrigger.cpp; sourceTree = SOURCE_ROOT; };
+		13720D7D3339A9481305CFF9 /* TableLookupOsc.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = TableLookupOsc.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/TableLookupOsc.h; sourceTree = SOURCE_ROOT; };
+		16C708A9E381F8A50B5CF25C /* ControlMetroDivider.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlMetroDivider.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlMetroDivider.cpp; sourceTree = SOURCE_ROOT; };
+		17C00C6A75897510EB84F223 /* Synth.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Synth.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/Synth.cpp; sourceTree = SOURCE_ROOT; };
+		1B859341A22FB17B4EDAD0C2 /* ControlComparison.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlComparison.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlComparison.cpp; sourceTree = SOURCE_ROOT; };
+		1C8557EE82BB2574595A7084 /* Reverb.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Reverb.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/Reverb.cpp; sourceTree = SOURCE_ROOT; };
+		1CDB0542603B7CAB7F6CE9A3 /* Mixer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Mixer.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/Mixer.cpp; sourceTree = SOURCE_ROOT; };
+		216B2095F2BE0ECBDF7B92FE /* RampedValue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = RampedValue.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/RampedValue.h; sourceTree = SOURCE_ROOT; };
+		23231D5B9BFA976EC334F601 /* DynamicVector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = DynamicVector.cpp; path = src/DynamicVector.cpp; sourceTree = SOURCE_ROOT; };
+		26B24989CEFA066C732EF343 /* drawMidiNotes.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = drawMidiNotes.cpp; path = src/drawMidiNotes.cpp; sourceTree = SOURCE_ROOT; };
+		277F047DEFBA6FBF45DA308C /* ControlXYSpeed.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlXYSpeed.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlXYSpeed.cpp; sourceTree = SOURCE_ROOT; };
+		283E2BECA8DD1F0C61545757 /* ControlDbToLinear.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlDbToLinear.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlDbToLinear.cpp; sourceTree = SOURCE_ROOT; };
+		288FFD5BDDB56163EB49345F /* Generator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Generator.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/Generator.cpp; sourceTree = SOURCE_ROOT; };
+		2A8566373CC3455B427D78DC /* ControlDelay.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlDelay.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlDelay.h; sourceTree = SOURCE_ROOT; };
+		2D129AB0F7D46B8DFCEADEDB /* testApp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = testApp.h; path = src/testApp.h; sourceTree = SOURCE_ROOT; };
+		2D29D8268D3BD790F0736FCB /* Noise.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Noise.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/Noise.cpp; sourceTree = SOURCE_ROOT; };
+		2D5A700DECDF337351FFA94F /* FixedValue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = FixedValue.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/FixedValue.h; sourceTree = SOURCE_ROOT; };
+		329ABE2CA184EB7F4BE05BC0 /* StereoDelay.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = StereoDelay.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/StereoDelay.cpp; sourceTree = SOURCE_ROOT; };
+		336EFA0335045377F605F00F /* ControlGenerator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlGenerator.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlGenerator.h; sourceTree = SOURCE_ROOT; };
+		3440EF9887C2464A03EB3226 /* RingBuffer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = RingBuffer.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/RingBuffer.h; sourceTree = SOURCE_ROOT; };
+		3455698B6D6F036A8292229C /* CombFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = CombFilter.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/CombFilter.cpp; sourceTree = SOURCE_ROOT; };
+		34D0A3BA074918FC82B19FE2 /* Effect.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Effect.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/Effect.h; sourceTree = SOURCE_ROOT; };
+		3A80253C5ED6EBF32FC23D19 /* TonicCore.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = TonicCore.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/TonicCore.h; sourceTree = SOURCE_ROOT; };
+		3BADEA53D3F47E7A8CD7C5DC /* ControlValue.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlValue.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlValue.cpp; sourceTree = SOURCE_ROOT; };
+		3D5839C8A3DE6C4E7F1246E4 /* ControlFloor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlFloor.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlFloor.cpp; sourceTree = SOURCE_ROOT; };
+		4054E5FC3C728430D4D1AAC0 /* BufferPlayer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = BufferPlayer.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/BufferPlayer.h; sourceTree = SOURCE_ROOT; };
+		4089FAD9A09BA7B2137EFAFC /* BasicDelay.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = BasicDelay.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/BasicDelay.h; sourceTree = SOURCE_ROOT; };
+		411057523B298EFBCFDC6C7B /* ControlRecorder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlRecorder.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlRecorder.cpp; sourceTree = SOURCE_ROOT; };
+		4B6FD2B61505CA0AB0B739F0 /* Effect.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Effect.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/Effect.cpp; sourceTree = SOURCE_ROOT; };
+		50797F0C38242BE035B99721 /* SineWave.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = SineWave.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/SineWave.cpp; sourceTree = SOURCE_ROOT; };
+		5117FA0B950BBFA4604A7524 /* ControlSnapToScale.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlSnapToScale.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlSnapToScale.h; sourceTree = SOURCE_ROOT; };
+		512F85418609E67CFED65748 /* ofxSlider.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSlider.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxGui/src/ofxSlider.cpp; sourceTree = SOURCE_ROOT; };
+		5140860DB99F5D47F18C916F /* TableLookupOsc.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = TableLookupOsc.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/TableLookupOsc.cpp; sourceTree = SOURCE_ROOT; };
+		516FF86AFB184F30CC7237A7 /* Filters.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Filters.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/Filters.h; sourceTree = SOURCE_ROOT; };
+		51FC300B6E32950BDBE85BB4 /* ControlDelay.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlDelay.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlDelay.cpp; sourceTree = SOURCE_ROOT; };
+		52440B5BE1570BC1F88494E1 /* DSPUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = DSPUtils.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/DSPUtils.h; sourceTree = SOURCE_ROOT; };
+		564A95DD8906732286C49FFD /* ControlValue.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlValue.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlValue.h; sourceTree = SOURCE_ROOT; };
+		59238CD43F966833890F8A79 /* AudioFileUtils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = AudioFileUtils.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/AudioFileUtils.cpp; sourceTree = SOURCE_ROOT; };
+		593B43EA58B55DEF8DA94C8F /* ControlArithmetic.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlArithmetic.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlArithmetic.cpp; sourceTree = SOURCE_ROOT; };
+		5BBB5C24A70F956CCF9AE36C /* Filters.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Filters.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/Filters.cpp; sourceTree = SOURCE_ROOT; };
+		5BC45E4DACE76F94FF0D0519 /* ControlConditioner.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlConditioner.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlConditioner.cpp; sourceTree = SOURCE_ROOT; };
+		5E18B2913B75515D6F9DBE61 /* DelayUtils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = DelayUtils.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/DelayUtils.cpp; sourceTree = SOURCE_ROOT; };
+		5E3FD1EF690E8A16B80F1CD1 /* CombFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = CombFilter.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/CombFilter.h; sourceTree = SOURCE_ROOT; };
+		5F183AD1C3E18A5D007C3CDB /* Tonic.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Tonic.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic.h; sourceTree = SOURCE_ROOT; };
+		5F1A606C47B6D8E0246A3703 /* BufferFiller.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = BufferFiller.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/BufferFiller.h; sourceTree = SOURCE_ROOT; };
+		5F8F4B12D3849CCEF94E1688 /* BitCrusher.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = BitCrusher.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/BitCrusher.cpp; sourceTree = SOURCE_ROOT; };
+		642B6B04F320F9DF8E77D922 /* Generator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Generator.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/Generator.h; sourceTree = SOURCE_ROOT; };
+		6635BD4201F21FD3FE725261 /* TonicFrames.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = TonicFrames.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/TonicFrames.h; sourceTree = SOURCE_ROOT; };
+		6823CA1F07B4778C50F5F19B /* ControlChangeNotifier.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlChangeNotifier.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlChangeNotifier.cpp; sourceTree = SOURCE_ROOT; };
+		6A5241257C7D8A92FFAE92B1 /* ofxTonic.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxTonic.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/ofxTonic.h; sourceTree = SOURCE_ROOT; };
+		6B54B5B10E27E62B61AF326F /* Synth.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Synth.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/Synth.h; sourceTree = SOURCE_ROOT; };
+		6DEEF3C6072BDDDB6F70CCD1 /* PolySynth.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = PolySynth.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/PolySynth.cpp; sourceTree = SOURCE_ROOT; };
+		6ED2CB8B21DF481920C36C6A /* ofxLabel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxLabel.h; path = ../../../of_v0.8.4_osx_release/addons/ofxGui/src/ofxLabel.h; sourceTree = SOURCE_ROOT; };
+		741F26B77A060521D14348E6 /* FilterUtils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = FilterUtils.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/FilterUtils.cpp; sourceTree = SOURCE_ROOT; };
+		743CD8E85804FDECD8A2E0F4 /* ControlRandom.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlRandom.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlRandom.cpp; sourceTree = SOURCE_ROOT; };
+		764180E374D3402ED47DBBA9 /* ControlPrinter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlPrinter.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlPrinter.h; sourceTree = SOURCE_ROOT; };
+		777B0A12DC0FE01D5015E0E4 /* ofxSliderGroup.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSliderGroup.h; path = ../../../of_v0.8.4_osx_release/addons/ofxGui/src/ofxSliderGroup.h; sourceTree = SOURCE_ROOT; };
+		7BA7BD060851740F738BE786 /* ofxSlider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxSlider.h; path = ../../../of_v0.8.4_osx_release/addons/ofxGui/src/ofxSlider.h; sourceTree = SOURCE_ROOT; };
+		815C55E718092346CA925F18 /* ADSR.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ADSR.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ADSR.h; sourceTree = SOURCE_ROOT; };
+		81E2B2035EF818201DC0A12C /* ControlChangeNotifier.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlChangeNotifier.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlChangeNotifier.h; sourceTree = SOURCE_ROOT; };
+		823F2C4242638E7BE92BBACA /* ControlGenerator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlGenerator.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlGenerator.cpp; sourceTree = SOURCE_ROOT; };
+		8353D65817B65709BC7B6F3A /* ofxPanel.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxPanel.h; path = ../../../of_v0.8.4_osx_release/addons/ofxGui/src/ofxPanel.h; sourceTree = SOURCE_ROOT; };
+		84ADCC668F6E3032F6E9191F /* ADSR.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ADSR.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ADSR.cpp; sourceTree = SOURCE_ROOT; };
+		872F64CD74DB8A5B76B62051 /* BasicDelay.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = BasicDelay.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/BasicDelay.cpp; sourceTree = SOURCE_ROOT; };
+		88E165CDFE89CA25F4B9DCA3 /* BitCrusher.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = BitCrusher.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/BitCrusher.h; sourceTree = SOURCE_ROOT; };
+		941DD3DFE6CCBA2EA5EFA5F3 /* Arithmetic.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Arithmetic.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/Arithmetic.h; sourceTree = SOURCE_ROOT; };
+		948EB7C98862E98454694505 /* SampleTable.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = SampleTable.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/SampleTable.cpp; sourceTree = SOURCE_ROOT; };
+		957960D39663DBCCDC2AE56A /* BufferFiller.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = BufferFiller.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/BufferFiller.cpp; sourceTree = SOURCE_ROOT; };
+		9970EE0CC318F0241C7C9DB8 /* ofxToggle.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxToggle.h; path = ../../../of_v0.8.4_osx_release/addons/ofxGui/src/ofxToggle.h; sourceTree = SOURCE_ROOT; };
+		9A6E37F3A54DCBED333133A8 /* SineWave.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = SineWave.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/SineWave.h; sourceTree = SOURCE_ROOT; };
+		9E9E57D46ACB6314B558F57E /* ControlTriggerFilter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlTriggerFilter.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlTriggerFilter.h; sourceTree = SOURCE_ROOT; };
+		9F34A0CB5DB5A77FE49871C7 /* ControlStepper.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlStepper.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlStepper.cpp; sourceTree = SOURCE_ROOT; };
+		9F6717C2C9E58F9F16E9CE24 /* FixedValue.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = FixedValue.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/FixedValue.cpp; sourceTree = SOURCE_ROOT; };
+		A05396602DEE517F5F486976 /* ControlSwitcher.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlSwitcher.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlSwitcher.cpp; sourceTree = SOURCE_ROOT; };
+		A1BCD560ACEEF93E696CBF99 /* ControlCounter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlCounter.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlCounter.cpp; sourceTree = SOURCE_ROOT; };
+		A2275C1E76C24434AB3838BC /* ofxLabel.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxLabel.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxGui/src/ofxLabel.cpp; sourceTree = SOURCE_ROOT; };
+		A364F5B42FEC3BB001D7E19A /* Arithmetic.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = Arithmetic.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/Arithmetic.cpp; sourceTree = SOURCE_ROOT; };
+		A450974347DA2F554304EB4E /* ControlCounter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlCounter.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlCounter.h; sourceTree = SOURCE_ROOT; };
+		A885722F1AE6726A003B8953 /* MIDIComposition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIComposition.h; sourceTree = "<group>"; };
+		A88572301AE6726A003B8953 /* MIDIEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIEvent.h; sourceTree = "<group>"; };
+		A88572311AE6726A003B8953 /* MIDIFileReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MIDIFileReader.cpp; sourceTree = "<group>"; };
+		A88572321AE6726A003B8953 /* MIDIFileReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MIDIFileReader.h; sourceTree = "<group>"; };
+		A9266575F19FA22B98255D76 /* TonicFrames.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = TonicFrames.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/TonicFrames.cpp; sourceTree = SOURCE_ROOT; };
+		AAF24BDE58081F2600120365 /* DelayUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = DelayUtils.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/DelayUtils.h; sourceTree = SOURCE_ROOT; };
+		AB3907758A1052B00AA0546B /* RectWave.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = RectWave.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/RectWave.cpp; sourceTree = SOURCE_ROOT; };
+		AB3B761981D1662E9E4CA533 /* SawtoothWave.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = SawtoothWave.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/SawtoothWave.cpp; sourceTree = SOURCE_ROOT; };
+		AD0733998712F4F071110979 /* ControlConditioner.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlConditioner.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlConditioner.h; sourceTree = SOURCE_ROOT; };
+		AD66E4251579557432468B41 /* ControlParameter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlParameter.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlParameter.cpp; sourceTree = SOURCE_ROOT; };
+		AEFA08B0920CD121779BD41C /* SquareWave.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = SquareWave.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/SquareWave.h; sourceTree = SOURCE_ROOT; };
+		AFDF9A3C85B997051192D321 /* ControlTriggerFilter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlTriggerFilter.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlTriggerFilter.cpp; sourceTree = SOURCE_ROOT; };
+		AFF3F06FBE6B0D7CEDDE8FE5 /* ofxButton.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxButton.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxGui/src/ofxButton.cpp; sourceTree = SOURCE_ROOT; };
+		B19AA147EBEA2F99CC77584F /* BLEPOscillator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = BLEPOscillator.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/BLEPOscillator.cpp; sourceTree = SOURCE_ROOT; };
+		B59CA90E31FF06233D2548AE /* LFNoise.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = LFNoise.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/LFNoise.h; sourceTree = SOURCE_ROOT; };
+		B6B1881C95C600C095C833A8 /* midiEventHolder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = midiEventHolder.cpp; path = src/midiEventHolder.cpp; sourceTree = SOURCE_ROOT; };
+		B7ABB3CD19C9B5E972FB0655 /* SampleTable.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = SampleTable.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/SampleTable.h; sourceTree = SOURCE_ROOT; };
+		B7E3B21376571DE66ACA54C2 /* ControlMetro.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlMetro.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlMetro.h; sourceTree = SOURCE_ROOT; };
+		B86DE26E64E80B2D0F2F73F8 /* CompressorLimiter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = CompressorLimiter.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/CompressorLimiter.h; sourceTree = SOURCE_ROOT; };
+		B9CF3DFB95BBB9FF13FA3D5A /* MonoToStereoPanner.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = MonoToStereoPanner.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/MonoToStereoPanner.cpp; sourceTree = SOURCE_ROOT; };
+		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../of_v0.8.4_osx_release/libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
+		BDD2C680044CFC3536205AB0 /* ControlStepper.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlStepper.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlStepper.h; sourceTree = SOURCE_ROOT; };
+		C0C47B733B50F54C82BBB099 /* ControlCallback.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlCallback.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlCallback.h; sourceTree = SOURCE_ROOT; };
+		C1A41966919556124B46FCD4 /* ControlPrinter.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlPrinter.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlPrinter.cpp; sourceTree = SOURCE_ROOT; };
+		C427B42BB65B6AA017739432 /* drawMidiNotes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = drawMidiNotes.h; path = src/drawMidiNotes.h; sourceTree = SOURCE_ROOT; };
+		C515897AB86D72BED2E8560F /* ofxButton.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxButton.h; path = ../../../of_v0.8.4_osx_release/addons/ofxGui/src/ofxButton.h; sourceTree = SOURCE_ROOT; };
+		C5AD6662E86777EFF4A1C788 /* ControlParameter.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlParameter.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlParameter.h; sourceTree = SOURCE_ROOT; };
+		C5B25970C134A3D119426350 /* ControlSwitcher.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlSwitcher.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlSwitcher.h; sourceTree = SOURCE_ROOT; };
+		CAE12410E5D9D56FB91B0280 /* ControlRecorder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlRecorder.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlRecorder.h; sourceTree = SOURCE_ROOT; };
+		CB30E45FA56E4392DFDE61FA /* Mixer.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Mixer.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/Mixer.h; sourceTree = SOURCE_ROOT; };
+		CC677D701896625AA4EC31B0 /* ControlDbToLinear.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlDbToLinear.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlDbToLinear.h; sourceTree = SOURCE_ROOT; };
+		CC84AEDEE8FCDAABA63F1595 /* BufferPlayer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = BufferPlayer.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/BufferPlayer.cpp; sourceTree = SOURCE_ROOT; };
+		CD95329867D87CE40EE81456 /* BLEPOscillator.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = BLEPOscillator.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/BLEPOscillator.h; sourceTree = SOURCE_ROOT; };
+		CDEBC794060A9DFB8970E434 /* ControlCallback.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlCallback.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlCallback.cpp; sourceTree = SOURCE_ROOT; };
+		CDEFB71B9A25906CBE7118B3 /* ControlPulse.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlPulse.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlPulse.cpp; sourceTree = SOURCE_ROOT; };
+		CEABD0C4957561E256530427 /* ofxTonicSynth.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxTonicSynth.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/ofxTonicSynth.h; sourceTree = SOURCE_ROOT; };
+		CF0C9CB00961FB5339CA25E1 /* ofxGuiGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxGuiGroup.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxGui/src/ofxGuiGroup.cpp; sourceTree = SOURCE_ROOT; };
+		D0608ACB91CDF448469D5DBC /* ControlRandom.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlRandom.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlRandom.h; sourceTree = SOURCE_ROOT; };
+		D2FF45A6ED94C83023E209E2 /* StereoDelay.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = StereoDelay.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/StereoDelay.h; sourceTree = SOURCE_ROOT; };
+		D433EBC671E7F4B073BF9B26 /* ControlFloor.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlFloor.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlFloor.h; sourceTree = SOURCE_ROOT; };
+		D473EFFA85BA2F401A0212F1 /* NoteBlock.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = NoteBlock.h; path = src/NoteBlock.h; sourceTree = SOURCE_ROOT; };
+		D5D9C6DBF0397FA5FBAF325D /* LFNoise.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = LFNoise.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/LFNoise.cpp; sourceTree = SOURCE_ROOT; };
+		D8B97ED3C3D79F0AB94E799C /* ControlPulse.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlPulse.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlPulse.h; sourceTree = SOURCE_ROOT; };
+		DC9812335144769961D9581E /* NoteBlock.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = NoteBlock.cpp; path = src/NoteBlock.cpp; sourceTree = SOURCE_ROOT; };
+		DFD77080B285C9FBBF545077 /* MonoToStereoPanner.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = MonoToStereoPanner.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/MonoToStereoPanner.h; sourceTree = SOURCE_ROOT; };
+		E06D3A6D0389BC5E0492DD1A /* ControlTrigger.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlTrigger.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlTrigger.h; sourceTree = SOURCE_ROOT; };
+		E0EC86FA98B2AC605EBE5AEF /* TriangleWave.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = TriangleWave.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/TriangleWave.h; sourceTree = SOURCE_ROOT; };
+		E252B7D177B5A05FBB239E43 /* FilterUtils.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = FilterUtils.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/FilterUtils.h; sourceTree = SOURCE_ROOT; };
+		E3C1086A36300A3C345BEDC1 /* DynamicVector.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = DynamicVector.h; path = src/DynamicVector.h; sourceTree = SOURCE_ROOT; };
+		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../of_v0.8.4_osx_release/libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = /System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<absolute>"; };
+		E45BE9730E8CC7DD009D7055 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+		E45BE9750E8CC7DD009D7055 /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = /System/Library/Frameworks/CoreAudio.framework; sourceTree = "<absolute>"; };
+		E45BE9760E8CC7DD009D7055 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = /System/Library/Frameworks/CoreFoundation.framework; sourceTree = "<absolute>"; };
+		E45BE9770E8CC7DD009D7055 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = /System/Library/Frameworks/CoreServices.framework; sourceTree = "<absolute>"; };
+		E45BE9790E8CC7DD009D7055 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuickTime.framework; path = /System/Library/Frameworks/QuickTime.framework; sourceTree = "<absolute>"; };
+		E4B69B5B0A3A1756003C02F2 /* timeLineTriggerDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = timeLineTriggerDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4B69E1D0A3A1BDC003C02F2 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.plist.xml; path = "openFrameworks-Info.plist"; sourceTree = "<group>"; };
+		E4C2424410CC5A17004149E2 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		E4C2424510CC5A17004149E2 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		E4C2424610CC5A17004149E2 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = CoreOF.xcconfig; path = ../../../of_v0.8.4_osx_release/libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig; sourceTree = SOURCE_ROOT; };
+		E4EB6923138AFD0F00A09F29 /* Project.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Project.xcconfig; sourceTree = "<group>"; };
+		E77264B2C5DA2BEA13C5D1A8 /* Reverb.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Reverb.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/Reverb.h; sourceTree = SOURCE_ROOT; };
+		E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = /System/Library/Frameworks/CoreVideo.framework; sourceTree = "<absolute>"; };
+		E7E077E715D3B6510020DFD4 /* QTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QTKit.framework; path = /System/Library/Frameworks/QTKit.framework; sourceTree = "<absolute>"; };
+		E7F985F515E0DE99003869B5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = /System/Library/Frameworks/Accelerate.framework; sourceTree = "<absolute>"; };
+		EAFA0B0D2F1DD3992128003A /* ControlComparison.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlComparison.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlComparison.h; sourceTree = SOURCE_ROOT; };
+		EBBABB9C6B5CCDB698F9F2AF /* ControlMidiToFreq.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlMidiToFreq.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlMidiToFreq.cpp; sourceTree = SOURCE_ROOT; };
+		EC031DC9D1DFDA14940EAFB4 /* SawtoothWave.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = SawtoothWave.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/SawtoothWave.h; sourceTree = SOURCE_ROOT; };
+		ECC458AF867A5CF7FBA1BABA /* DSPUtils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = DSPUtils.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/DSPUtils.cpp; sourceTree = SOURCE_ROOT; };
+		EDEF81F9CEE3FE888B2821EB /* RectWave.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = RectWave.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/RectWave.h; sourceTree = SOURCE_ROOT; };
+		F2D4AF3DC3F12EB1F38EB600 /* midiEventHolder.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = midiEventHolder.h; path = src/midiEventHolder.h; sourceTree = SOURCE_ROOT; };
+		F3EC557ABDE4F95198FA0EAA /* ControlMetro.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ControlMetro.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlMetro.cpp; sourceTree = SOURCE_ROOT; };
+		F4CFBB97845DFBE66322DB60 /* RingBuffer.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = RingBuffer.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/RingBuffer.cpp; sourceTree = SOURCE_ROOT; };
+		F620672E3226D9CD70EFF37D /* ControlMidiToFreq.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlMidiToFreq.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlMidiToFreq.h; sourceTree = SOURCE_ROOT; };
+		F689F55F2F059DD1E8C3BE6B /* ofxSliderGroup.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxSliderGroup.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxGui/src/ofxSliderGroup.cpp; sourceTree = SOURCE_ROOT; };
+		F76D6051521D089707B4AD17 /* Noise.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = Noise.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/Noise.h; sourceTree = SOURCE_ROOT; };
+		F7EE5976AD10E2945A0EDBAC /* ControlMetroDivider.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ControlMetroDivider.h; path = ../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic/ControlMetroDivider.h; sourceTree = SOURCE_ROOT; };
+		FAFA3F76EF4AD355426037CD /* ofxGui.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 30; name = ofxGui.h; path = ../../../of_v0.8.4_osx_release/addons/ofxGui/src/ofxGui.h; sourceTree = SOURCE_ROOT; };
+		FC80D589B227489C925F6EB4 /* ofxBaseGui.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 30; name = ofxBaseGui.cpp; path = ../../../of_v0.8.4_osx_release/addons/ofxGui/src/ofxBaseGui.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4B69B590A3A1756003C02F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7F985F815E0DEA3003869B5 /* Accelerate.framework in Frameworks */,
+				E7E077E815D3B6510020DFD4 /* QTKit.framework in Frameworks */,
+				E4EB6799138ADC1D00A09F29 /* GLUT.framework in Frameworks */,
+				E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */,
+				E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */,
+				E45BE97C0E8CC7DD009D7055 /* ApplicationServices.framework in Frameworks */,
+				E45BE97D0E8CC7DD009D7055 /* AudioToolbox.framework in Frameworks */,
+				E45BE97F0E8CC7DD009D7055 /* CoreAudio.framework in Frameworks */,
+				E45BE9800E8CC7DD009D7055 /* CoreFoundation.framework in Frameworks */,
+				E45BE9810E8CC7DD009D7055 /* CoreServices.framework in Frameworks */,
+				E45BE9830E8CC7DD009D7055 /* OpenGL.framework in Frameworks */,
+				E45BE9840E8CC7DD009D7055 /* QuickTime.framework in Frameworks */,
+				E4C2424710CC5A17004149E2 /* AppKit.framework in Frameworks */,
+				E4C2424810CC5A17004149E2 /* Cocoa.framework in Frameworks */,
+				E4C2424910CC5A17004149E2 /* IOKit.framework in Frameworks */,
+				E7E077E515D3B63C0020DFD4 /* CoreVideo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0E79F97A89352266EDC34BFD /* Tonic */ = {
+			isa = PBXGroup;
+			children = (
+				84ADCC668F6E3032F6E9191F /* ADSR.cpp */,
+				815C55E718092346CA925F18 /* ADSR.h */,
+				A364F5B42FEC3BB001D7E19A /* Arithmetic.cpp */,
+				941DD3DFE6CCBA2EA5EFA5F3 /* Arithmetic.h */,
+				59238CD43F966833890F8A79 /* AudioFileUtils.cpp */,
+				04CF94E33D81597127BD84F4 /* AudioFileUtils.h */,
+				872F64CD74DB8A5B76B62051 /* BasicDelay.cpp */,
+				4089FAD9A09BA7B2137EFAFC /* BasicDelay.h */,
+				5F8F4B12D3849CCEF94E1688 /* BitCrusher.cpp */,
+				88E165CDFE89CA25F4B9DCA3 /* BitCrusher.h */,
+				B19AA147EBEA2F99CC77584F /* BLEPOscillator.cpp */,
+				CD95329867D87CE40EE81456 /* BLEPOscillator.h */,
+				957960D39663DBCCDC2AE56A /* BufferFiller.cpp */,
+				5F1A606C47B6D8E0246A3703 /* BufferFiller.h */,
+				CC84AEDEE8FCDAABA63F1595 /* BufferPlayer.cpp */,
+				4054E5FC3C728430D4D1AAC0 /* BufferPlayer.h */,
+				3455698B6D6F036A8292229C /* CombFilter.cpp */,
+				5E3FD1EF690E8A16B80F1CD1 /* CombFilter.h */,
+				050D17EC6C6CAC8BBB3ADF7E /* CompressorLimiter.cpp */,
+				B86DE26E64E80B2D0F2F73F8 /* CompressorLimiter.h */,
+				593B43EA58B55DEF8DA94C8F /* ControlArithmetic.cpp */,
+				0A6F7E27321C6B29B0058CB4 /* ControlArithmetic.h */,
+				CDEBC794060A9DFB8970E434 /* ControlCallback.cpp */,
+				C0C47B733B50F54C82BBB099 /* ControlCallback.h */,
+				6823CA1F07B4778C50F5F19B /* ControlChangeNotifier.cpp */,
+				81E2B2035EF818201DC0A12C /* ControlChangeNotifier.h */,
+				1B859341A22FB17B4EDAD0C2 /* ControlComparison.cpp */,
+				EAFA0B0D2F1DD3992128003A /* ControlComparison.h */,
+				5BC45E4DACE76F94FF0D0519 /* ControlConditioner.cpp */,
+				AD0733998712F4F071110979 /* ControlConditioner.h */,
+				A1BCD560ACEEF93E696CBF99 /* ControlCounter.cpp */,
+				A450974347DA2F554304EB4E /* ControlCounter.h */,
+				283E2BECA8DD1F0C61545757 /* ControlDbToLinear.cpp */,
+				CC677D701896625AA4EC31B0 /* ControlDbToLinear.h */,
+				51FC300B6E32950BDBE85BB4 /* ControlDelay.cpp */,
+				2A8566373CC3455B427D78DC /* ControlDelay.h */,
+				3D5839C8A3DE6C4E7F1246E4 /* ControlFloor.cpp */,
+				D433EBC671E7F4B073BF9B26 /* ControlFloor.h */,
+				823F2C4242638E7BE92BBACA /* ControlGenerator.cpp */,
+				336EFA0335045377F605F00F /* ControlGenerator.h */,
+				F3EC557ABDE4F95198FA0EAA /* ControlMetro.cpp */,
+				B7E3B21376571DE66ACA54C2 /* ControlMetro.h */,
+				16C708A9E381F8A50B5CF25C /* ControlMetroDivider.cpp */,
+				F7EE5976AD10E2945A0EDBAC /* ControlMetroDivider.h */,
+				EBBABB9C6B5CCDB698F9F2AF /* ControlMidiToFreq.cpp */,
+				F620672E3226D9CD70EFF37D /* ControlMidiToFreq.h */,
+				AD66E4251579557432468B41 /* ControlParameter.cpp */,
+				C5AD6662E86777EFF4A1C788 /* ControlParameter.h */,
+				C1A41966919556124B46FCD4 /* ControlPrinter.cpp */,
+				764180E374D3402ED47DBBA9 /* ControlPrinter.h */,
+				CDEFB71B9A25906CBE7118B3 /* ControlPulse.cpp */,
+				D8B97ED3C3D79F0AB94E799C /* ControlPulse.h */,
+				743CD8E85804FDECD8A2E0F4 /* ControlRandom.cpp */,
+				D0608ACB91CDF448469D5DBC /* ControlRandom.h */,
+				411057523B298EFBCFDC6C7B /* ControlRecorder.cpp */,
+				CAE12410E5D9D56FB91B0280 /* ControlRecorder.h */,
+				00A81D17FED4744CCD000880 /* ControlSnapToScale.cpp */,
+				5117FA0B950BBFA4604A7524 /* ControlSnapToScale.h */,
+				9F34A0CB5DB5A77FE49871C7 /* ControlStepper.cpp */,
+				BDD2C680044CFC3536205AB0 /* ControlStepper.h */,
+				A05396602DEE517F5F486976 /* ControlSwitcher.cpp */,
+				C5B25970C134A3D119426350 /* ControlSwitcher.h */,
+				10CCAA6FD3A686A594B2E44B /* ControlTrigger.cpp */,
+				E06D3A6D0389BC5E0492DD1A /* ControlTrigger.h */,
+				AFDF9A3C85B997051192D321 /* ControlTriggerFilter.cpp */,
+				9E9E57D46ACB6314B558F57E /* ControlTriggerFilter.h */,
+				3BADEA53D3F47E7A8CD7C5DC /* ControlValue.cpp */,
+				564A95DD8906732286C49FFD /* ControlValue.h */,
+				277F047DEFBA6FBF45DA308C /* ControlXYSpeed.cpp */,
+				05694B93650DE1C481478EFA /* ControlXYSpeed.h */,
+				5E18B2913B75515D6F9DBE61 /* DelayUtils.cpp */,
+				AAF24BDE58081F2600120365 /* DelayUtils.h */,
+				ECC458AF867A5CF7FBA1BABA /* DSPUtils.cpp */,
+				52440B5BE1570BC1F88494E1 /* DSPUtils.h */,
+				4B6FD2B61505CA0AB0B739F0 /* Effect.cpp */,
+				34D0A3BA074918FC82B19FE2 /* Effect.h */,
+				5BBB5C24A70F956CCF9AE36C /* Filters.cpp */,
+				516FF86AFB184F30CC7237A7 /* Filters.h */,
+				741F26B77A060521D14348E6 /* FilterUtils.cpp */,
+				E252B7D177B5A05FBB239E43 /* FilterUtils.h */,
+				9F6717C2C9E58F9F16E9CE24 /* FixedValue.cpp */,
+				2D5A700DECDF337351FFA94F /* FixedValue.h */,
+				288FFD5BDDB56163EB49345F /* Generator.cpp */,
+				642B6B04F320F9DF8E77D922 /* Generator.h */,
+				D5D9C6DBF0397FA5FBAF325D /* LFNoise.cpp */,
+				B59CA90E31FF06233D2548AE /* LFNoise.h */,
+				1CDB0542603B7CAB7F6CE9A3 /* Mixer.cpp */,
+				CB30E45FA56E4392DFDE61FA /* Mixer.h */,
+				B9CF3DFB95BBB9FF13FA3D5A /* MonoToStereoPanner.cpp */,
+				DFD77080B285C9FBBF545077 /* MonoToStereoPanner.h */,
+				2D29D8268D3BD790F0736FCB /* Noise.cpp */,
+				F76D6051521D089707B4AD17 /* Noise.h */,
+				6DEEF3C6072BDDDB6F70CCD1 /* PolySynth.cpp */,
+				0585675D5DDDA99187B2B4E4 /* PolySynth.h */,
+				0CBBEBEDDA3B38A98A02FC08 /* RampedValue.cpp */,
+				216B2095F2BE0ECBDF7B92FE /* RampedValue.h */,
+				AB3907758A1052B00AA0546B /* RectWave.cpp */,
+				EDEF81F9CEE3FE888B2821EB /* RectWave.h */,
+				1C8557EE82BB2574595A7084 /* Reverb.cpp */,
+				E77264B2C5DA2BEA13C5D1A8 /* Reverb.h */,
+				F4CFBB97845DFBE66322DB60 /* RingBuffer.cpp */,
+				3440EF9887C2464A03EB3226 /* RingBuffer.h */,
+				948EB7C98862E98454694505 /* SampleTable.cpp */,
+				B7ABB3CD19C9B5E972FB0655 /* SampleTable.h */,
+				AB3B761981D1662E9E4CA533 /* SawtoothWave.cpp */,
+				EC031DC9D1DFDA14940EAFB4 /* SawtoothWave.h */,
+				50797F0C38242BE035B99721 /* SineWave.cpp */,
+				9A6E37F3A54DCBED333133A8 /* SineWave.h */,
+				AEFA08B0920CD121779BD41C /* SquareWave.h */,
+				329ABE2CA184EB7F4BE05BC0 /* StereoDelay.cpp */,
+				D2FF45A6ED94C83023E209E2 /* StereoDelay.h */,
+				17C00C6A75897510EB84F223 /* Synth.cpp */,
+				6B54B5B10E27E62B61AF326F /* Synth.h */,
+				5140860DB99F5D47F18C916F /* TableLookupOsc.cpp */,
+				13720D7D3339A9481305CFF9 /* TableLookupOsc.h */,
+				3A80253C5ED6EBF32FC23D19 /* TonicCore.h */,
+				A9266575F19FA22B98255D76 /* TonicFrames.cpp */,
+				6635BD4201F21FD3FE725261 /* TonicFrames.h */,
+				E0EC86FA98B2AC605EBE5AEF /* TriangleWave.h */,
+			);
+			name = Tonic;
+			sourceTree = "<group>";
+		};
+		3659747FA7D45BE871634DFA /* src */ = {
+			isa = PBXGroup;
+			children = (
+				6A5241257C7D8A92FFAE92B1 /* ofxTonic.h */,
+				07B7D4C70C40787848BAEA07 /* ofxTonicSynth.cpp */,
+				CEABD0C4957561E256530427 /* ofxTonicSynth.h */,
+				0E79F97A89352266EDC34BFD /* Tonic */,
+				5F183AD1C3E18A5D007C3CDB /* Tonic.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		480A780D8D0308AE4A368801 /* ofxGui */ = {
+			isa = PBXGroup;
+			children = (
+				A763ED608B35AE3310251DEE /* src */,
+			);
+			name = ofxGui;
+			sourceTree = "<group>";
+		};
+		76271A12053DA157D2DB4F78 /* ofxTonic */ = {
+			isa = PBXGroup;
+			children = (
+				3659747FA7D45BE871634DFA /* src */,
+			);
+			name = ofxTonic;
+			sourceTree = "<group>";
+		};
+		A763ED608B35AE3310251DEE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				FC80D589B227489C925F6EB4 /* ofxBaseGui.cpp */,
+				0C09313AD58E6B27381B9951 /* ofxBaseGui.h */,
+				AFF3F06FBE6B0D7CEDDE8FE5 /* ofxButton.cpp */,
+				C515897AB86D72BED2E8560F /* ofxButton.h */,
+				FAFA3F76EF4AD355426037CD /* ofxGui.h */,
+				CF0C9CB00961FB5339CA25E1 /* ofxGuiGroup.cpp */,
+				0939F2BE63A39C87789FACF5 /* ofxGuiGroup.h */,
+				A2275C1E76C24434AB3838BC /* ofxLabel.cpp */,
+				6ED2CB8B21DF481920C36C6A /* ofxLabel.h */,
+				0F8138DA6AF657A161D95584 /* ofxPanel.cpp */,
+				8353D65817B65709BC7B6F3A /* ofxPanel.h */,
+				512F85418609E67CFED65748 /* ofxSlider.cpp */,
+				7BA7BD060851740F738BE786 /* ofxSlider.h */,
+				F689F55F2F059DD1E8C3BE6B /* ofxSliderGroup.cpp */,
+				777B0A12DC0FE01D5015E0E4 /* ofxSliderGroup.h */,
+				021E44C1F2F225C5628E57F3 /* ofxToggle.cpp */,
+				9970EE0CC318F0241C7C9DB8 /* ofxToggle.h */,
+			);
+			name = src;
+			sourceTree = "<group>";
+		};
+		A885722E1AE6726A003B8953 /* midiFileReader */ = {
+			isa = PBXGroup;
+			children = (
+				A885722F1AE6726A003B8953 /* MIDIComposition.h */,
+				A88572301AE6726A003B8953 /* MIDIEvent.h */,
+				A88572311AE6726A003B8953 /* MIDIFileReader.cpp */,
+				A88572321AE6726A003B8953 /* MIDIFileReader.h */,
+			);
+			path = midiFileReader;
+			sourceTree = SOURCE_ROOT;
+		};
+		BB4B014C10F69532006C3DED /* addons */ = {
+			isa = PBXGroup;
+			children = (
+				480A780D8D0308AE4A368801 /* ofxGui */,
+				76271A12053DA157D2DB4F78 /* ofxTonic */,
+			);
+			name = addons;
+			sourceTree = "<group>";
+		};
+		BBAB23C913894ECA00AA2426 /* system frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7F985F515E0DE99003869B5 /* Accelerate.framework */,
+				E4C2424410CC5A17004149E2 /* AppKit.framework */,
+				E4C2424510CC5A17004149E2 /* Cocoa.framework */,
+				E4C2424610CC5A17004149E2 /* IOKit.framework */,
+				E45BE9710E8CC7DD009D7055 /* AGL.framework */,
+				E45BE9720E8CC7DD009D7055 /* ApplicationServices.framework */,
+				E45BE9730E8CC7DD009D7055 /* AudioToolbox.framework */,
+				E45BE9750E8CC7DD009D7055 /* CoreAudio.framework */,
+				E45BE9760E8CC7DD009D7055 /* CoreFoundation.framework */,
+				E45BE9770E8CC7DD009D7055 /* CoreServices.framework */,
+				E45BE9790E8CC7DD009D7055 /* OpenGL.framework */,
+				E45BE97A0E8CC7DD009D7055 /* QuickTime.framework */,
+				E7E077E415D3B63C0020DFD4 /* CoreVideo.framework */,
+				E7E077E715D3B6510020DFD4 /* QTKit.framework */,
+			);
+			name = "system frameworks";
+			sourceTree = "<group>";
+		};
+		BBAB23CA13894EDB00AA2426 /* 3rd party frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBAB23BE13894E4700AA2426 /* GLUT.framework */,
+			);
+			name = "3rd party frameworks";
+			sourceTree = "<group>";
+		};
+		E4328144138ABC890047C5CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4328148138ABC890047C5CB /* openFrameworksDebug.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E45BE5980E8CC70C009D7055 /* frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BBAB23CA13894EDB00AA2426 /* 3rd party frameworks */,
+				BBAB23C913894ECA00AA2426 /* system frameworks */,
+			);
+			name = frameworks;
+			sourceTree = "<group>";
+		};
+		E4B69B4A0A3A1720003C02F2 = {
+			isa = PBXGroup;
+			children = (
+				E4B6FCAD0C3E899E008CF71C /* openFrameworks-Info.plist */,
+				E4EB6923138AFD0F00A09F29 /* Project.xcconfig */,
+				E4B69E1C0A3A1BDC003C02F2 /* src */,
+				E4EEC9E9138DF44700A80321 /* openFrameworks */,
+				BB4B014C10F69532006C3DED /* addons */,
+				E45BE5980E8CC70C009D7055 /* frameworks */,
+				E4B69B5B0A3A1756003C02F2 /* timeLineTriggerDebug.app */,
+			);
+			sourceTree = "<group>";
+		};
+		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				26B24989CEFA066C732EF343 /* drawMidiNotes.cpp */,
+				C427B42BB65B6AA017739432 /* drawMidiNotes.h */,
+				23231D5B9BFA976EC334F601 /* DynamicVector.cpp */,
+				E3C1086A36300A3C345BEDC1 /* DynamicVector.h */,
+				B6B1881C95C600C095C833A8 /* midiEventHolder.cpp */,
+				F2D4AF3DC3F12EB1F38EB600 /* midiEventHolder.h */,
+				DC9812335144769961D9581E /* NoteBlock.cpp */,
+				D473EFFA85BA2F401A0212F1 /* NoteBlock.h */,
+				00A1BFCBB38848AD0E0C8539 /* testApp.cpp */,
+				2D129AB0F7D46B8DFCEADEDB /* testApp.h */,
+				A885722E1AE6726A003B8953 /* midiFileReader */,
+			);
+			path = src;
+			sourceTree = SOURCE_ROOT;
+		};
+		E4EEC9E9138DF44700A80321 /* openFrameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E4EB691F138AFCF100A09F29 /* CoreOF.xcconfig */,
+				E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */,
+			);
+			name = openFrameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4B69B5A0A3A1756003C02F2 /* timeLineTrigger */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "timeLineTrigger" */;
+			buildPhases = (
+				E4B69B580A3A1756003C02F2 /* Sources */,
+				E4B69B590A3A1756003C02F2 /* Frameworks */,
+				E4B6FFFD0C3F9AB9008CF71C /* ShellScript */,
+				E4C2427710CC5ABF004149E2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4EEB9AC138B136A00A80321 /* PBXTargetDependency */,
+			);
+			name = timeLineTrigger;
+			productName = myOFApp;
+			productReference = E4B69B5B0A3A1756003C02F2 /* timeLineTriggerDebug.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4B69B4C0A3A1720003C02F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+			};
+			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "timeLineTrigger" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = E4B69B4A0A3A1720003C02F2;
+			productRefGroup = E4B69B4A0A3A1720003C02F2;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = E4328144138ABC890047C5CB /* Products */;
+					ProjectRef = E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				E4B69B5A0A3A1756003C02F2 /* timeLineTrigger */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		E4328148138ABC890047C5CB /* openFrameworksDebug.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = openFrameworksDebug.a;
+			remoteRef = E4328147138ABC890047C5CB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E4B6FFFD0C3F9AB9008CF71C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp -f ../../../of_v0.8.4_osx_release/libs/fmodex/lib/osx/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libfmodex.dylib\"; install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME\";\nmkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n\nmkdir -p \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/data/\"\n\ncp -r bin/data \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources\";\n\ncp -f \"$ICON_FILE\" \"$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4B69B580A3A1756003C02F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4B69E200A3A1BDC003C02F2 /* main.cpp in Sources */,
+				77F2ED14C3D2CE9F41A2D6D1 /* drawMidiNotes.cpp in Sources */,
+				DF276444C8B415B79AAAEF84 /* DynamicVector.cpp in Sources */,
+				E0991CBE1EC91B9322AC8366 /* midiEventHolder.cpp in Sources */,
+				3731C442E85A5725A3DBC1CE /* NoteBlock.cpp in Sources */,
+				29D734F0DDECC8C5978185D7 /* testApp.cpp in Sources */,
+				258DE4FE0E17A691B1ECAB06 /* ofxBaseGui.cpp in Sources */,
+				7D38DC8021C7B4DAF7A69C2D /* ofxButton.cpp in Sources */,
+				92341401421A0B920082DDBD /* ofxGuiGroup.cpp in Sources */,
+				E7AC2657E8C96AAAEE1D9B19 /* ofxLabel.cpp in Sources */,
+				D41B21C1AB6D1BBB8EF5A522 /* ofxPanel.cpp in Sources */,
+				3D5B05390E4B441DBA465D48 /* ofxSlider.cpp in Sources */,
+				47394C682F897B265693B298 /* ofxSliderGroup.cpp in Sources */,
+				1D630D2FD3E2F527A7747C00 /* ofxToggle.cpp in Sources */,
+				B175CFE7B2152CD478E1D6D6 /* ofxTonicSynth.cpp in Sources */,
+				0C70741DF4F4B50E5EBC2E53 /* ADSR.cpp in Sources */,
+				465012EBD4EAB5B8095E9C57 /* Arithmetic.cpp in Sources */,
+				2D8F5CB5A40DE25EC97DA970 /* AudioFileUtils.cpp in Sources */,
+				8B6F32C9D700B7E3F6EBFC83 /* BasicDelay.cpp in Sources */,
+				FF3E5FACBDEEE9CB993033CF /* BitCrusher.cpp in Sources */,
+				23D85D81C332EFF42246C299 /* BLEPOscillator.cpp in Sources */,
+				A488DFFA45219390CAEC1E20 /* BufferFiller.cpp in Sources */,
+				908EE70F3FD8EBAEC4E4C987 /* BufferPlayer.cpp in Sources */,
+				BEC7F7D830F6BBDB814CD97B /* CombFilter.cpp in Sources */,
+				8AF2EEC4DF2BAC3C35A8A239 /* CompressorLimiter.cpp in Sources */,
+				76DB20A2A574D39A5B9423D9 /* ControlArithmetic.cpp in Sources */,
+				41ED751C68B9D28329E8AB9E /* ControlCallback.cpp in Sources */,
+				1365066CDAD2DEC11CE17B18 /* ControlChangeNotifier.cpp in Sources */,
+				FDF535249079D4B50BB9F146 /* ControlComparison.cpp in Sources */,
+				A88572331AE6726A003B8953 /* MIDIFileReader.cpp in Sources */,
+				170610A19FA9B6623AB8557B /* ControlConditioner.cpp in Sources */,
+				F70D1F854825282D021CAF40 /* ControlCounter.cpp in Sources */,
+				5418F65F8DEF4BD7078A3A2B /* ControlDbToLinear.cpp in Sources */,
+				9D0882A0D434DBC3DDECD811 /* ControlDelay.cpp in Sources */,
+				47AEC45AC231F7ADC5C99A47 /* ControlFloor.cpp in Sources */,
+				02993C5300B0DCEB21D021D3 /* ControlGenerator.cpp in Sources */,
+				A8332085CE6828F777F75D66 /* ControlMetro.cpp in Sources */,
+				1FDBD3C0F5E03277FA7042BA /* ControlMetroDivider.cpp in Sources */,
+				9FFF143C973D03F537173D44 /* ControlMidiToFreq.cpp in Sources */,
+				E3D2A3536C837423F8C4733A /* ControlParameter.cpp in Sources */,
+				75D73A593FB626A062B493E2 /* ControlPrinter.cpp in Sources */,
+				F042C3F088716C7EB2339A0F /* ControlPulse.cpp in Sources */,
+				1D7ACFC1637CBC2A81A9E3B8 /* ControlRandom.cpp in Sources */,
+				DB07BB971086C304CA1AA148 /* ControlRecorder.cpp in Sources */,
+				085A705A4414D892703717B4 /* ControlSnapToScale.cpp in Sources */,
+				11787BD2DD882AD95813D42F /* ControlStepper.cpp in Sources */,
+				40792E663FB078329774F91E /* ControlSwitcher.cpp in Sources */,
+				9B8BD79C44E24679A499D4D0 /* ControlTrigger.cpp in Sources */,
+				8FF4D046A6861730E2B0C98C /* ControlTriggerFilter.cpp in Sources */,
+				72FDD8BE8A9D8494665054F3 /* ControlValue.cpp in Sources */,
+				D8EA7BF307006FF96D75F81B /* ControlXYSpeed.cpp in Sources */,
+				0761DF42C2303FEA321C3DE2 /* DelayUtils.cpp in Sources */,
+				ED4A67A1165011C77DDBDC01 /* DSPUtils.cpp in Sources */,
+				E3D8B660B37129AEAAC603B6 /* Effect.cpp in Sources */,
+				7D4CA57CEB408030D55DE5F0 /* Filters.cpp in Sources */,
+				CE9496881F832FFB1A850AC7 /* FilterUtils.cpp in Sources */,
+				FA98C9EE09410CEC8005AA08 /* FixedValue.cpp in Sources */,
+				9F6D5A9E40F4E921B926177A /* Generator.cpp in Sources */,
+				95CD42950BE62C162A7A815A /* LFNoise.cpp in Sources */,
+				A65CBD20178985071B9E1974 /* Mixer.cpp in Sources */,
+				57CDD11BFAE9CBF942BB8A3D /* MonoToStereoPanner.cpp in Sources */,
+				9A492B5A584706B9FB956B10 /* Noise.cpp in Sources */,
+				F13781413CB2102335822C77 /* PolySynth.cpp in Sources */,
+				E9A96F8C29B30CDF9264C109 /* RampedValue.cpp in Sources */,
+				73F3BA51ECF2A460B1CACD94 /* RectWave.cpp in Sources */,
+				D970D3ECD900F846776BC85B /* Reverb.cpp in Sources */,
+				74CCB88913E790BBAD3A27BE /* RingBuffer.cpp in Sources */,
+				1FDC53FADD2599323CD4684E /* SampleTable.cpp in Sources */,
+				CC0106CAF2A507EF63728E06 /* SawtoothWave.cpp in Sources */,
+				366B29CE7CFA7080360ED957 /* SineWave.cpp in Sources */,
+				01FC8D05CA501B53F6C1782F /* StereoDelay.cpp in Sources */,
+				E63F4667B2E69C390DE5594D /* Synth.cpp in Sources */,
+				E9FC1A5BEF16D79A7AA93907 /* TableLookupOsc.cpp in Sources */,
+				37C2D7A22A8313F6F724303F /* TonicFrames.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4EEB9AC138B136A00A80321 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = openFrameworks;
+			targetProxy = E4EEB9AB138B136A00A80321 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E4B69B4E0A3A1720003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../of_v0.8.4_osx_release/addons/ofxGui/libs,
+					../../../of_v0.8.4_osx_release/addons/ofxGui/src,
+					../../../of_v0.8.4_osx_release/addons/addons/libs,
+					../../../of_v0.8.4_osx_release/addons/addons/src,
+					src,
+					../../../of_v0.8.4_osx_release/addons/ofxTonic/libs,
+					../../../of_v0.8.4_osx_release/addons/ofxTonic/src,
+					../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-lpthread",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		E4B69B4F0A3A1720003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4EB6923138AFD0F00A09F29 /* Project.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH)";
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/bin/";
+				COPY_PHASE_STRIP = YES;
+				DEAD_CODE_STRIPPING = YES;
+				GCC_AUTO_VECTORIZATION = YES;
+				GCC_ENABLE_SSE3_EXTENSIONS = YES;
+				GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = YES;
+				GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO = NO;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = NO;
+				GCC_WARN_UNINITIALIZED_AUTOS = NO;
+				GCC_WARN_UNUSED_VALUE = NO;
+				GCC_WARN_UNUSED_VARIABLE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(OF_CORE_HEADERS)",
+					../../../of_v0.8.4_osx_release/addons/ofxGui/libs,
+					../../../of_v0.8.4_osx_release/addons/ofxGui/src,
+					../../../of_v0.8.4_osx_release/addons/addons/libs,
+					../../../of_v0.8.4_osx_release/addons/addons/src,
+					src,
+					../../../of_v0.8.4_osx_release/addons/ofxTonic/libs,
+					../../../of_v0.8.4_osx_release/addons/ofxTonic/src,
+					../../../of_v0.8.4_osx_release/addons/ofxTonic/src/Tonic,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				OTHER_CPLUSPLUSFLAGS = (
+					"-D__MACOSX_CORE__",
+					"-lpthread",
+					"-mtune=native",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		E4B69B600A3A1757003C02F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../of_v0.8.4_osx_release/libs/glut/lib/osx\"";
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				ICON = "$(ICON_NAME_DEBUG)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_16)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_17)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_18)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_19)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_20)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_21)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_22)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_23)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_24)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_25)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_26)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_27)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_28)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_29)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_30)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_31)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_32)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_33)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_34)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_35)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_36)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_37)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_38)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_39)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_40)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_41)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_42)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_43)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_44)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_45)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_46)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_47)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_48)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_49)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_52)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)Debug";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E4B69B610A3A1757003C02F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+				);
+				FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 = "\"$(SRCROOT)/../../../of_v0.8.4_osx_release/libs/glut/lib/osx\"";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_MODEL_TUNING = NONE;
+				ICON = "$(ICON_NAME_RELEASE)";
+				ICON_FILE = "$(ICON_FILE_PATH)$(ICON)";
+				INFOPLIST_FILE = "openFrameworks-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_14)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_1)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_8)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_9)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_10)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_11)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_16)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_17)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_18)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_19)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_20)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_21)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_22)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_23)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_24)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_25)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_26)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_27)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_28)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_29)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_30)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_31)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_32)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_33)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_34)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_35)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_36)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_37)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_38)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_39)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_40)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_41)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_42)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_43)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_44)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_45)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_46)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_47)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_48)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_49)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_50)",
+					"$(LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_51)",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "timeLineTrigger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B4E0A3A1720003C02F2 /* Debug */,
+				E4B69B4F0A3A1720003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4B69B5F0A3A1757003C02F2 /* Build configuration list for PBXNativeTarget "timeLineTrigger" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4B69B600A3A1757003C02F2 /* Debug */,
+				E4B69B610A3A1757003C02F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4B69B4C0A3A1720003C02F2 /* Project object */;
+}

@@ -10,6 +10,7 @@
 
 NoteBlock::NoteBlock(){
     onPos = ofVec3f( ofRandom( 100, ofGetWidth()-100 ), ofRandom( 50, ofGetHeight()-50 ), 0 );
+    contactBlock = false;
 }
 
 NoteBlock::~NoteBlock(){
@@ -75,10 +76,14 @@ void NoteBlock::contact(ofVec3f _input){
     if (blockRotationZ==0) {
         if ( ((_input.x>pos1.x)&&(_input.x<pos3.x))&&((_input.y>pos1.y-(pos3.y-pos1.y))&&(_input.y<pos3.y+(pos3.y-pos1.y))) ) {
             contactBlock = true;
+        } else {
+            contactBlock = false;
         }
     } else {
         if ( ((_input.x>pos1.x-(pos3.x-pos1.x))&&(_input.x<pos3.x+(pos3.x-pos1.x)))&&((_input.y>pos1.y)&&(_input.y<pos3.y)) ) {
             contactBlock = true;
+        } else {
+            contactBlock = false;
         }
     }
     
@@ -90,7 +95,6 @@ void NoteBlock::drawing(){
     
     if (contactBlock) {
         ofSetColor( ofColor::fromHsb(0, 0, 255, ofMap(midiVelocity,0,127,0,255)) );
-        contactBlock = !contactBlock;
     } else {
         ofSetColor( ofColor::fromHsb(0, 0, 0, ofMap(midiVelocity,0,127,0,180)) );
     }

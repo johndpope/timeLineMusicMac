@@ -121,6 +121,8 @@ class testApp : public ofBaseApp{
     
     bool reload;
     
+    bool fullscreen;
+    
 };
 
 #endif
